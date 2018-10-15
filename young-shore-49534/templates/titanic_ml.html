@@ -1,0 +1,44 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+	<br></br>
+	<br></br>
+	<h1>Titanic ML</h1>
+	{% from "includes/_formhelpers.html" import render_field %}
+	<table class = "table table-stripped">
+		<tr>
+			<th>Are you gonna died?</th>	
+		</tr>
+		<td>{{ans}}</td>
+	</table>
+	<form method="POST" action="">
+		<div class="form-group">
+			{{render_field(form.Pclass,class_="form-control")}}
+		</div>
+		<div class="form-group">
+			{{render_field(form.Sex,class_="form-control")}}
+		</div>
+		<div class="form-group">
+			{{render_field(form.Age,class_="form-control")}}
+		</div>
+		<div class="form-group">
+			{{render_field(form.Fare,class_="form-control")}}
+		</div>
+		<div class="form-group">
+			{{render_field(form.Embarked,class_="form-control")}}
+		</div>
+		<div class="form-group">
+			{{render_field(form.Title,class_="form-control")}}
+		</div>
+		<div class="form-group">
+			{{render_field(form.IsAlone,class_="form-control")}}
+		</div>
+		<div class="form-group">
+			{{render_field(form.AgePclass,class_="form-control")}}
+		</div>
+		
+		<p><input type="submit" class="btn btn-primary btn-lg" value="Submit"></p>
+	</form>
+{% endblock %}
+
+
