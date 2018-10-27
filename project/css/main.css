@@ -1514,6 +1514,57 @@ input::-moz-focus-inner {
   right: 3rem;
 }
 
+/*----------------------*/
+.btn-animatedbg2 {
+  position: relative;
+  background: transparent !important;
+  border-color: #F26522 !important;
+  color: #F26522 !important;
+  height: 6.6rem;
+  line-height: 6.2rem;
+  padding: 0 8rem 0 4rem;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn-animatedbg2::before {
+  content: "";
+  height: 100%;
+  width: 0;
+  background-color: #F26522;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.btn-animatedbg2::after {
+  display: block;
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(../images/icons/icon-arrow-right.svg);
+  background-size: contain;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  margin-top: -1.1rem;
+  position: absolute;
+  top: 50%;
+  right: 4rem;
+}
+
+.btn-animatedbg2:hover::before {
+  width: 100%;
+}
+
+.btn-animatedbg2:hover::after {
+  right: 3rem;
+}
+
 /* ------------------------------------------------------------------- 
  * responsive:
  * reusable and common theme styles

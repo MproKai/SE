@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.19, created on 2018-10-27 16:40:36
+<?php /* Smarty version 2.6.19, created on 2018-10-28 02:23:22
          compiled from index.tpl */ ?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
@@ -34,6 +34,8 @@
     <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <!-- c3 Charts -->
+    <link href="css/plugins/c3/c3.min.css" rel="stylesheet">
 
 </head>
 
@@ -110,11 +112,7 @@ unset($_smarty_tpl_vars);
 
     <!-- services
     ================================================== -->
-    <?php $_smarty_tpl_vars = $this->_tpl_vars;
-$this->_smarty_include(array('smarty_include_tpl_file' => 'section_service.tpl', 'smarty_include_vars' => array()));
-$this->_tpl_vars = $_smarty_tpl_vars;
-unset($_smarty_tpl_vars);
- ?>
+
 
 
     <!-- works
@@ -133,11 +131,7 @@ unset($_smarty_tpl_vars);
 
     <!-- contact
     ================================================== -->
-    <?php $_smarty_tpl_vars = $this->_tpl_vars;
-$this->_smarty_include(array('smarty_include_tpl_file' => "section_contact.tpl", 'smarty_include_vars' => array()));
-$this->_tpl_vars = $_smarty_tpl_vars;
-unset($_smarty_tpl_vars);
- ?>
+ 
 
 
     <!-- footer
@@ -165,5 +159,5 @@ unset($_smarty_tpl_vars);
     <script src="js/bootstrap.min.js"></script>
     <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
     <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
-
+   
 </body>
