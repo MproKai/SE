@@ -1,4 +1,4 @@
-烤雞 roastchicken
+﻿烤雞 roastchicken
 牛排 steak
 茄汁 tomato
 番紅花 saff
@@ -11,7 +11,8 @@
 雞肉 chicken
 肉醬 meatsource
 蛤蠣 clam
-鮮蔬野菇 vegetable
+鮮蔬 vegetable
+野菇 fungous
 杏鮑菇 mushroom
 海鮮 seafood
 德國豬腳 porkfeet
