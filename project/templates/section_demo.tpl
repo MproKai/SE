@@ -15,7 +15,7 @@
 
  </style>
  {/literal}
- <section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="images/bg-pic.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+ <section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="images/bg-pic2.png" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
 
         <div class="shadow-overlay"></div>
 
@@ -59,41 +59,5 @@
 <script type="text/javascript">
 
 
-    function send_request(){
-   
-        var url = 'http://172.16.0.46:5000/preprocessing/'+$('#mc-request').val();
-        var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-               // Typical action to be performed when the document is ready:
-               $('#api-response').show();
-               var arr = JSON.parse(xhttp.responseText)
-               
-               get_pic_by_list(arr);
-            }
-        };
-        xhttp.open("GET", url, true);
-        xhttp.send();
-    }
-    // this function needs input an array that like ['cream' , 'vegatables' , 'pasta']
-    function get_pic_by_list(arr){
-       // var tmp_arr = ['cream' , 'vegatables' , 'pasta'];
-        
-        $('#api-response').show();
-        $('#title').hide();
-        arr.forEach(function(element){
-            $('#api-response').append('<img src="images/'+element+'.jpg" class="img-circle circle-border m-b-md custom_circle_pic" >&nbsp;&nbsp;&nbsp;');
-        });
-    }
-
-    function start_speech(){
-        $('#start_speech').hide();
-        $('#end_speech').show();
-    }
-
-    function end_speech(){
-        $('#end_speech').hide();
-        $('#start_speech').show();
-    }
 </script>
 {/literal}

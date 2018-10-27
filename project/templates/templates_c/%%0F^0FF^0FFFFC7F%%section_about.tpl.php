@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.19, created on 2018-10-20 18:07:10
+<?php /* Smarty version 2.6.19, created on 2018-10-27 13:47:15
          compiled from section_about.tpl */ ?>
  <section id="about" class="s-about target-section">
 

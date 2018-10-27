@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.19, created on 2018-10-21 14:09:10
+<?php /* Smarty version 2.6.19, created on 2018-10-27 16:40:36
          compiled from index.tpl */ ?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
@@ -30,6 +30,10 @@
     ================================================== -->
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <link rel="icon" href="favicon.png" type="image/x-icon">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
 </head>
 
@@ -63,8 +67,15 @@ $this->_smarty_include(array('smarty_include_tpl_file' => 'section_home.tpl', 's
 $this->_tpl_vars = $_smarty_tpl_vars;
 unset($_smarty_tpl_vars);
  ?>
+        <!-- demo
+    ================================================== -->
+    <?php $_smarty_tpl_vars = $this->_tpl_vars;
+$this->_smarty_include(array('smarty_include_tpl_file' => 'section_demo.tpl', 'smarty_include_vars' => array()));
+$this->_tpl_vars = $_smarty_tpl_vars;
+unset($_smarty_tpl_vars);
+ ?>
 
-        <section id="stats" class="s-stats">
+<!-- <section id="stats" class="s-stats">
 
         <div class="row stats-block block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">
                 
@@ -85,9 +96,9 @@ unset($_smarty_tpl_vars);
                 <h5>Cups of Coffee</h5> 
             </div>
 
-        </div> <!-- end stats -->
+        </div>
 
-    </section> <!-- end s-stats -->
+    </section> -->
 
     <!-- about
     ================================================== -->
@@ -150,5 +161,9 @@ unset($_smarty_tpl_vars);
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+     <!-- Mainly scripts -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 
 </body>

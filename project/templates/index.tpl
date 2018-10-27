@@ -28,6 +28,10 @@
     ================================================== -->
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <link rel="icon" href="favicon.png" type="image/x-icon">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
 </head>
 
@@ -53,6 +57,9 @@
     <!-- home
     ================================================== -->
     {include file='section_home.tpl'}
+        <!-- demo
+    ================================================== -->
+    {include file='section_demo.tpl'}
 
 <!-- <section id="stats" class="s-stats">
 
@@ -120,5 +127,9 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+     <!-- Mainly scripts -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 
 </body>
